@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc pipe return 0
+gcc min-size-for-stack-sharing return"0"
