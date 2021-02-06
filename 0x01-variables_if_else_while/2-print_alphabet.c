@@ -2,18 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - last digit
+ * main - Print Alphabet
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
+	char a;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	printf("Last digit of %i is %i ", n, (n % 10));
-
-	printf("and is less than 6 and not 0\n");
+	for (a >= 'a'; a <= 'z'; a++)
+		putchar(a);
+	putchar('/n');
 	return (0);
 }
+
