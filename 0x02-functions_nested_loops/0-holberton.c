@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *main - Puts the prase Holberton
+ * main - Print Holberton
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
