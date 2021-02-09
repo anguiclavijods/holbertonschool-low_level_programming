@@ -1,17 +1,17 @@
-include "holberton.h"
+#include "holberton.h"
 /**
  * print_alphabet_x10 - check the code for Holberton School students.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char = b, a;
+	int a, b;
 
-	for  (a = 0; a < 10 ; a++)
+	for (b = 0; b < 10; b++)
 	{
-		for (b = 97; b <= 122; b++)
-			_putchar(b);
+		for (a = 97; a <= 122; a++)
+			_putchar(a);
 		_putchar('\n');
 	}
 }
