@@ -1,4 +1,4 @@
-#include <holberton.h>
+#include "holberton.h"
 /**
  *main - Puts the prase Holberton
  *
@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	_putchar(Holberton);
+	_putchar("Holberton");
 	return (0);
 }
