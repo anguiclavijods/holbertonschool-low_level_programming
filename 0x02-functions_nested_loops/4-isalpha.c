@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- * _isalpha - check the code for Holberton School students.
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int _isalpha(int c)
-
-	if (c)
-	{
-		_putchar('');
-		reurn (1);
+{
+	if (c>=65){
+		
+		return (1);
 	}
-	else if ()
+	else
 	{
-		return(0);
+		return (0);	
 	}
+}
