@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _isalpha - check the code for Holberton School students.
+ * _isalpha - determinate if the character is alpha or not
  * @c: The character to print
  * Return: 1 if this is alpha, 0 if not
  */
