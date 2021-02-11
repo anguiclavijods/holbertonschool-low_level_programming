@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * times_table - print multiplication tables from 0 to 9
- * @void:no argument
+ * @void: no argument
 */
 void times_table(void)
 {
