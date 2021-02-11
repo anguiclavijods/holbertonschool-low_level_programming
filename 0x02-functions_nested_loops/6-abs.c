@@ -4,11 +4,10 @@
  *
  * Return: Always 0.
  */
-int _abs(int)
+int _abs(int r)
 {
-	int r;
-
-	r = _abs(9);
-	_putchar("%d", r);
-	return (0);
+	if (r>0)
+		return (r);
+	else
+		return (-r);
 }
