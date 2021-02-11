@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_numbers -Function print numbers 0 to 9.
  *
  * Return: Always 0.
  */
-int main(void)
+void print_numbers(void)
 {
     print_numbers();
     return (0);
