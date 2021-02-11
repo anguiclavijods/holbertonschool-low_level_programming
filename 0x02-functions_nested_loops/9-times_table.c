@@ -1,10 +1,12 @@
 #include "holberton.h"
- /**
- * times_table - print multiplication tables from 0 to 9;
+/**
+ * times_table - print multiplication tables from 0 to 9
+ * @void:no argument
 */
 void times_table(void)
 {
          int table, number;
+	 
          for (table = 0 ; table <= 9; table++)
          {
                  for (number = 0; number <= 9 ; number++)
