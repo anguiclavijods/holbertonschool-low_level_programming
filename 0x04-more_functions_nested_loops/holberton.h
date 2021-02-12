@@ -1,5 +1,7 @@
-#ifndef HOLBERTON_H
+#ifndef HOLBERTON_H 
 #define HOLBERTON_H
+int _putchar(char c);
+
 /* function that checks for uppercase character*/
 int _isupper(int c);
 
@@ -9,7 +11,7 @@ int _isdigit(int c);
 /*function that multiplies two integers*/
 int mul(int a, int b);
 
-/* function that prints the numbers, from 0 to 9*/
+/* function that prints the numbers from 0 to 9*/
 void print_numbers(void);
 
 /*function that prints the numbers, from 0 to 9 not 2 and 4*/
