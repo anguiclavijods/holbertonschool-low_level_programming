@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- *print_numbers - print numbers of 0 to 9
- *void: not arg
+ * print_numbers - print the numbers
+ * void: none args
+ *
  */
 void print_numbers(void)
 {
-	int  c;
+	int a;
 
-	c = 48;
-	while (c <= 57)
+	a = 48;
+	while (a <= 57)
 	{
-		_putchar(c);
-		c++;
+		_putchar(a '\n');
+		a++;
 	}
-	_putchar ('\n');
 }
