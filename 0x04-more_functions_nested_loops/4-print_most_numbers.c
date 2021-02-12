@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *print_most_number - print number 0 to 9 except 2 and 4
+ * print_most_number - prints the numbers, 0 to 9 except 2 and 4
  *
- *Return: none
+ * Return: None
  */
 void print_most_numbers(void)
 {
