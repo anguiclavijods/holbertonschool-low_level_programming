@@ -1,6 +1,6 @@
 #ifndef HOLBERTON_H 
 #define HOLBERTON_H
-int _putchar(char c);
+int _putchar(char);
 
 /* function that checks for uppercase character*/
 int _isupper(int c);
