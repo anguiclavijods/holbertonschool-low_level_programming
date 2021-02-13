@@ -1,26 +1,32 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - prints a diagonal line
- * @n: number of times the character \ should be printed
+ * print_square - prints a square
+ * @size : size of the square
  *
- * Return : None
+ * Return: None
  */
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int cant, esp;
+	int fila, colum;
 
-	if (n <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	for (cant = 0; cant < n; cant++)
-	{
-		for (esp = 1; esp <= cant; esp++)
+		fila = 0;
+		while (fila < size)
 		{
-			_putchar(' ');
+			colum = 0;
+			while (colum < size)
+			{
+				_putchar('#');
+				colum++;
+			}
+			fila++;
+			_putchar('\n');
 		}
-		_putchar('\\');
+	}
+	else
+	{
 		_putchar('\n');
 	}
 }
