@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *print_to_98 - print number of 0 to 98
  *@n: int numbers 0
