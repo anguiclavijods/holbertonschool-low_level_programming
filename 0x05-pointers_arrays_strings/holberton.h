@@ -1,7 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 /*function similar a printf*/
-int  _putchar (char c);
+int  _putchar(char c);
 
 /* takes a pointer to an int,updates the value it points to to 98.*/
 void reset_to_98(int *n);
