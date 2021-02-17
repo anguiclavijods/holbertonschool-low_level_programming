@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_rev - print text in rev.
- * @n:  count
+ * @s: pointer
  * Return: none.
  */
 void print_rev(char *s)
@@ -11,6 +11,7 @@ void print_rev(char *s)
 	n = 0;
 	while (s[n] != '\0')
 		n++;
+	n--;
 
 	while (n >= 0)
 	{
