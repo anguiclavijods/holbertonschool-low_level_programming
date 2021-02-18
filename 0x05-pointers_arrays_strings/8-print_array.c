@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *print_array - print array of value of numbers
  *@a: array
