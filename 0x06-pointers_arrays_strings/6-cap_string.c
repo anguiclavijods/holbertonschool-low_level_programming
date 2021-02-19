@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  **cap_string - function that capitalizes all words of a string
  *@string: pointer type char, name string
