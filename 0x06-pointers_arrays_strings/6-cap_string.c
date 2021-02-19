@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * *cap_string - function that capitalizes all words of a string
- * @string: pointer type char, name string
- * return: none
+ **cap_string - function that capitalizes all words of a string
+ *@string: pointer type char, name string
+ *return: string
  */
 char *cap_string(char *string)
 {
@@ -10,7 +10,7 @@ char *cap_string(char *string)
 
 	while (string[i] != '\0')
 	{
-		if (string[i] == '/t' || string[i] == '/n' ||
+		if (string[i] == '\t' || string[i] == '\n' ||
 		    string[i] == ' ' || string[i] == ',' ||
 		    string[i] == ';' || string[i] == '.' ||
 		    string[i] == '!' || string[i] == '?' ||
@@ -26,4 +26,5 @@ char *cap_string(char *string)
 		}
 		i++;
 	}
+	return (string);
 }
