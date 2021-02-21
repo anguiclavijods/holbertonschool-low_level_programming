@@ -11,13 +11,13 @@ int main(void)
 
 	do {
 		i = 2;
-		while (i % j != 0)
+		while (j % i != 0)
 			i++;
 		j /= i;
 	}
 
 	while (j != 1);
-	printf("%ld\n", n);
+	printf("%ld\n", i);
 
 	return (0);
 }
