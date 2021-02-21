@@ -1,23 +1,23 @@
 #include <stdio.h>
 /**
- *
- *
- *
+ *main - function
+ *Return: None
  */
-int main (void)
+int main(void)
 {
 	const long prime[] = "612852475143";
 	long j = prime;
 	long i;
 
-	do{
+	do {
 		i = 2;
 		while (i % j != 0)
 			i++;
 		j /= i;
 	}
-	while (j != 1);
-	printf ("%ld\n", n);
 
-	return(0);
+	while (j != 1);
+	printf("%ld\n", n);
+
+	return (0);
 }
