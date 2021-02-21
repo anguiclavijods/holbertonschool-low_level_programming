@@ -6,9 +6,9 @@
  */
 int main (void)
 {
-	int prime[] = "612852475143";
-	int j = prime;
-	int i;
+	const long prime[] = "612852475143";
+	long j = prime;
+	long i;
 
 	do{
 		i = 2;
@@ -17,7 +17,7 @@ int main (void)
 		j /= i;
 	}
 	while (j != 1);
-	printf ("%p\n", n);
+	printf ("%ld\n", n);
 
 	return(0);
 }
