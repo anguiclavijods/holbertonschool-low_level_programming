@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_strspn: function that gets the length of a prefix substring.
+ *_strspn: gets the length of a prefix substring.
  *@s: value of array
  *@accept: value to remplace
  *Return: value count.
