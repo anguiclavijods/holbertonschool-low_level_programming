@@ -4,7 +4,7 @@
  *@s: variable origin
  *@b: variables to remplace
  *@n: cant of spaces in memory
- *Return: none.
+ *Return: Value of s.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
