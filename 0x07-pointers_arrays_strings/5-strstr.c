@@ -3,7 +3,7 @@
  *_strstr - location a sub array
  *@haystack: value of start
  *@needle: value to remplace
- *Return: value of p
+ *Return: none
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -27,6 +27,6 @@ char *_strstr(char *haystack, char *needle)
 	}
 	j -= i;
 	p = &haystack[j];
-	return (p);
+	return ('\0');
 }
 
