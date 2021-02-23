@@ -7,7 +7,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j = 0;
+	int i = 0, j = 0;
 	char *p;
 
 	for (; needle[i] != '\0'; i++)
@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 			else
-				i = '\0';
+				i = 0;
 		}
 	}
 	j -= i;
