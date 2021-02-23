@@ -11,10 +11,10 @@ void print_diagsums(int *a, int size)
 {
 	int i = 0, j = 0, c =0, c2 = 0;
 
-	for (; a[i] < size; i++)
+	for (; a[j] < size; j++)
 	{
-		j = i % size;
-		c += a [j +(i*size)];
+		i = j % size;
+		c += a [i +(i*size)];
 		c2 += a[i + ((size - 1 - i) * size)];
 	}
 	printf("%d, %d\n", c, c2);
