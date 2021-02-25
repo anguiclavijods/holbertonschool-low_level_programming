@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _puts_recursion - name recursion
+ *_puts_recursion - name recursion
  *@s: pointer s to char
  *Return: None.
  */

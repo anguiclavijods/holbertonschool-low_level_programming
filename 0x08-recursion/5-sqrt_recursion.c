@@ -26,5 +26,5 @@ int run(int n, int a)
 
 int _sqrt_recursion(int n)
 {
-	return (run(n, 1));
+	return (run(n, a + 1));
 }
