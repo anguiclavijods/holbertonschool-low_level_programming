@@ -1,12 +1,10 @@
 #include "holberton.h"
 #include "stdio.h"
 /**
- *run- Function created for validate numbers
+ * run - Function created for validate numbers
  *@n: number aleatory
  *@a: number of square
- *sqrt_recursion- Function for calculate square of numbers
- *@n: number of exaamples
- *Return: None.
+ *Return: Return of value root square of number
  */
 int run(int n, int a)
 {
@@ -24,6 +22,11 @@ int run(int n, int a)
 	}
 }
 
+/**
+ * _sqrt_recursion - Function for calculate square of numbers
+ *@n: number of exaamples
+ *Return: None.
+ */
 int _sqrt_recursion(int n)
 {
 	return (run(n, 1));
