@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * leng - length of a string
+ * length - length of a string
  * @s: s pointer a char
  * Return: Value of length
  */
@@ -17,7 +17,7 @@ int length(char *s)
 	return (size + 1 + length(s + 1));
 }
 /**
- * compare - compare the forward
+ * width - compare the forward
  * @f: int value
  * @b: int value
  * @s: s pointer a char
