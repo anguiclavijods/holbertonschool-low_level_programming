@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
 * _puts -  print a string
-* @str: string
+* @s: string
 * Return: none
 */
-void _puts(char *str)
+void _puts(char *s)
 {
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		_putchar (*str);
-		str++;
+		_putchar (*s);
+		s++;
 	}
 	_putchar ('\n');
 }
