@@ -1,10 +1,18 @@
 #include "holberton.h"
 /**
- *_islower - function
- *@c: variable type int
- *Return: none.
+ **_memset - fill tje memory, constant char
+ *@s: variable origin
+ *@b: variables to remplace
+ *@n: cant of spaces in memory
+ *Return: Value of s.
  */
-int _islower(int c)
+char *_memset(char *s, char b, unsigned int n)
 {
+	unsigned int i;
 
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
