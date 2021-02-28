@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- *_putchar - print char
+ *_isupper - print char
  *@c: variable type char
  *Return: none.
  */
-int _putchar(char c)
+int _isupper(int c)
 {
 	return (c >= 'A' && c <= 'Z');
 }
