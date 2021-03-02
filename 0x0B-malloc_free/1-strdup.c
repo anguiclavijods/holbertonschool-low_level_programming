@@ -13,22 +13,21 @@ char *_strdup(char *str)
 	char *duplicate;
 
 	if (!str)
+	{
 		return (NULL);
-
+	}
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-
 	duplicate = malloc(sizeof(char) * i);
-    for ( ; j <= i; j++)
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
+	for ( ; j <= i; j++)
 	{
 		duplicate[j] = str[j];
 	}
-
-	if (duplicate == NULL)
-    {
-        return (NULL);
-    }
-    return (duplicate);
+	return (duplicate);
 }
