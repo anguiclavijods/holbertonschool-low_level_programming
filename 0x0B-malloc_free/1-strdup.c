@@ -21,13 +21,13 @@ char *_strdup(char *str)
 	}
 
 	duplicate = malloc(sizeof(char) * i);
-	if (duplicate == NULL)
-    return (NULL);
-
-	for ( ; j <= i; j++)
+    for ( ; j <= i; j++)
 	{
 		duplicate[j] = str[j];
 	}
+    
+    if (duplicate == NULL)
+    return (NULL);
 
 	return (duplicate);
 }
