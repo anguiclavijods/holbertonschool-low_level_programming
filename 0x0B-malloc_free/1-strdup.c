@@ -25,9 +25,10 @@ char *_strdup(char *str)
 	{
 		duplicate[j] = str[j];
 	}
-    
-    if (duplicate == NULL)
-    return (NULL);
 
-	return (duplicate);
+	if (duplicate == NULL)
+    {
+        return (NULL);
+    }
+    return (duplicate);
 }
