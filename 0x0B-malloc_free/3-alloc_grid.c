@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  * alloc_grid - Name function
  * @width: whidth array
