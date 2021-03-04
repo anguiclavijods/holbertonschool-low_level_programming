@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*free_grid - name function
-*@grid: array value
-*@height: arraay value height
+*free_grid - name function prints a grid of integers
+*@grid: adress of the two dimensional grid
+*@height: height of the grid
 *Return: None
 */
 void free_grid(int **grid, int height)
