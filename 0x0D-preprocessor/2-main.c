@@ -1,10 +1,10 @@
-#include <stlib.h>
+#include <stdio.h>
 /**
  *main - name function main
  *Return: one.
  */
 int main ()
 {
-	printf("%s"__FILE__);
+	printf("%s\n", __FILE__);
 	return(0);
 }
