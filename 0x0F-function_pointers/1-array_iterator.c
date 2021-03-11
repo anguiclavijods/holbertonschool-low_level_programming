@@ -9,7 +9,11 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	int i = 0;
+
 	if (array && size && action);
-/*printf("%d", *array);*/
-		return;
+	for (; i != size; i++)
+	{
+		(*action)(array[i]);
+	}
 }
