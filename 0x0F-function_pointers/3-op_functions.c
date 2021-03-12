@@ -1,8 +1,7 @@
 /**
- * op_add - sum 
+ * op_add - sum
  * @a: integer parameter
  * @b: integer parameter
- *
  * Return: integer value
  */
 int op_add(int a, int b)
@@ -11,7 +10,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtract 
+ * op_sub - subtract
  * @a: integer parameter
  * @b: integer parameter
  *
