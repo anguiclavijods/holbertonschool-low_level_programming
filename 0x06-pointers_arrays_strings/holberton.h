@@ -8,7 +8,7 @@ int _putchar(char c);
 char *_strcat(char *dest, char *src);
 
 /*function that concatenates two strings.*/
- char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n);
 
 /*function that copies a string.*/
 char *_strncpy(char *dest, char *src, int n);
@@ -31,4 +31,6 @@ char *leet(char *);
 /* function that encodes a string using rot13.*/
 char *rot13(char *);
 
+/*function that print an integer*/
+void print_number(int n);
 #endif
