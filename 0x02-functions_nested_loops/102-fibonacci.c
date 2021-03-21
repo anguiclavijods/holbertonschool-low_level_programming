@@ -1,40 +1,26 @@
 /*Fibonacci Series using Dynamic Programming*/
 #include <stdio.h>
 /**
- * fib - name of function
- * @n: parameters.
- * Return: none.
-*/
-int fib(int n)
-{
-	int n1, n2, i;
-
-	if (fib <= 0)
-		print("Please enter a positive integer")
-	else if (fib == 1)
-		print("Fibonacci sequence upto", fib, ":")
-		print(n1)
-	else
-		print("Fibonacci squence:")
-			while (i < fib)
-			{
-				print(n1);
-				nth = n1 + n2;
-				n1 = n2;
-				n2 = nth;
-				i += 1;
-			}
-	return (0);
-}
-/**
  *main - function main
  *Return: (none)
 */
 int main(void)
 {
-	int n = 9;
+	short i;
+	unsigned long num1 = 0, num2 = 1, sum;
 
-	printf("%d", fib(n));
-	getchar();
+	for (i = 0; i < 50; i++)
+	{
+		sum = num1 + num2;
+		printf("%lu", sum);
+
+		num1 = num2;
+		num2 = sum;
+
+		if (i == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
 	return (0);
 }
