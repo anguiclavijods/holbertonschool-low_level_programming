@@ -7,6 +7,12 @@
 
 typedef struct list list_t;
 
+/**
+ * struct list - stuct of list value
+ * @str: value od string
+ * @len: size of s
+ * @next: next element of list
+ */
 struct list
 {
 	char *str;
@@ -31,4 +37,4 @@ list_t *add_node_end(list_t **head, const char *str);
 /*function that Free list*/
 void free_list(list_t *head);
 
-#endif 
+#endif
