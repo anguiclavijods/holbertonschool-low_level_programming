@@ -1,6 +1,21 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#define NIL "(nil)"
+
+#include <stdlib.h>
+
+typedef struct list list_t;
+
+struct list
+{
+	char *str;
+	int len;
+	list_t *next;
+};
+
+
+
 /*Function that  Print list*/
 size_t print_list(const list_t *h);
 
