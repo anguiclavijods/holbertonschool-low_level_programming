@@ -15,8 +15,8 @@
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 
@@ -39,13 +39,13 @@ void free_listint(listint_t *head);
 /*function that frees a listint_t list.*/
 void free_listint2(listint_t **head);
 
-/*function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).*/
+/*function that deletes the head node*/
 int pop_listint(listint_t **head);
 
 /* function that returns the nth node of a listint_t linked list.*/
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
-/* function that returns the sum of all the data (n) of a listint_t linked list.*/
+/* function that returns the sum*/
 int sum_listint(listint_t *head);
 
 /*function that inserts a new node at a given position.*/
