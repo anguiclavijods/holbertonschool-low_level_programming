@@ -1,18 +1,13 @@
 #include "lists.h"
 /**
- * print_listint - Name function for pint list
+ * print_listint - name function for pint list
  * @h: pointer to arguments
- * Return: value of all elements
+ * Return: number nodes
  */
 size_t print_listint(const listint_t *h)
 {
-int i = 0;
-
-while (h != NULL)
-{
+	if( h == NULL)
+		return (0);
 	printf("%d\n", h->n);
-	h = h->next;
-	i++;
-}
-return (i);
+	return (1 +(print_listint(h->next)));
 }
