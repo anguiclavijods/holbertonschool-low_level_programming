@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  * print_listint - name function for pint list
@@ -6,8 +7,8 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	if( h == NULL)
+	if (h == NULL)
 		return (0);
 	printf("%d\n", h->n);
-	return (1 +(print_listint(h->next)));
+	return (1 + (print_listint(h->next)));
 }
