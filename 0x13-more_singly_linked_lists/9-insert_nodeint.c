@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 /**
  * insert_nodeint_at_index - name of function that insert value
