@@ -6,7 +6,7 @@
 int _putchar(char c);
 
 /*Write a function that converts a binary number to an unsigned int.*/
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *);
 
 /*Write a function that prints the binary representation of a number.*/
 void print_binary(unsigned long int n);
