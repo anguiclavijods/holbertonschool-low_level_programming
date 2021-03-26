@@ -7,9 +7,9 @@
 void print_binary(unsigned long int n)
 {
 
-	int rem, count = 1, step = 1;
+	int count = 1;
 
-	if (n == NULL || n == 1)
+	if (n == 0 || n == 1)
 	{
 		_putchar(n + '0');
 		return;
