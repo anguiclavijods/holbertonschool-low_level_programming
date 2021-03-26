@@ -7,14 +7,26 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0, i = 0, rem;
-
-	while (b != 0)
+	if (!b)
 	{
-		rem = b % 10;
-		b /= 10;
-		dec += rem * pow(2, i);
-		++i;
+		return (0);
 	}
-	return (dec);
+	int count = 0;
+
+	while (b[count] != '\0')
+	{
+		if (b[count] != '0' && b[count] != '1')
+		{
+			return (0);
+		}
+		count++;
+	}
+	int last = count - 1;
+
+	while (last >= 0)
+	{
+		putchar(b[last]);
+		last--;
+	}
+	return (0);
 }
