@@ -22,11 +22,22 @@ unsigned int binary_to_uint(const char *b)
 		count++;
 	}
 	int last = count - 1;
+	int i = 0, bit = 0, result = 0;
 
 	while (last >= 0)
 	{
-		putchar(b[last]);
+		if(b[last] == '0')
+		{
+			bit = 0;
+		}
+		else
+		{
+			bit = 1;
+		}
+		result += bit << i;
+
 		last--;
+		i++;
 	}
-	return (0);
+	return (result);
 }
