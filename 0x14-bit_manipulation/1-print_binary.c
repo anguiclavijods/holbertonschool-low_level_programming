@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 	count--;
 	while (count >= 0)
 	{
-		if (( n >> count & 1) == 1)
+		if ((n >> count & 1) == 1)
 		{
 			_putchar('1');
 		}
