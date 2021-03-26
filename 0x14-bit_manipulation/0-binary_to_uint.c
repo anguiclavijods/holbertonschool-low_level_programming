@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  *binary_to_uint - function that return to integer and entry hexa...
  *@b: pointer to entry of value hexa...
@@ -7,7 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (!b)
+	if (b == NULL)
 	{
 		return (0);
 	}
