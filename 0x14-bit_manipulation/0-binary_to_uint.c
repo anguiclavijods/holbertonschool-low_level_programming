@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <math.h>
 #include <stdio.h>
 /**
  *binary_to_uint - function that return to integer and entry hexa...
