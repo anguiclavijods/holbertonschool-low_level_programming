@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,7 +20,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 /*Write a function that sets the value of a bit to 0 at a given index.*/
 int clear_bit(unsigned long int *n, unsigned int index);
 
-/*Write a function that returns the number of bits you would need to flip to get from one number to another.*/
+/*Write a function that returns the number of bits you would need to flip*/
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 #endif
