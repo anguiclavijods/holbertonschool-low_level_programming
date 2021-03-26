@@ -2,8 +2,9 @@
 #include <math.h>
 #include <stdio.h>
 /**
- *
- *
+ *binary_to_uint - function that return to integer and entry hexa...
+ *@b: pointer to entry of value hexa...
+ *Return: values of integer of values hexa...
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -26,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (last >= 0)
 	{
-		if(b[last] == '0')
+		if (b[last] == '0')
 		{
 			bit = 0;
 		}
