@@ -19,7 +19,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/*case 2 file valid*/
 	fileDescription = open(filename, O_RDONLY);
-
 	if (fileDescription == -1)
 	{
 		return (0);
@@ -33,18 +32,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	readDescription = read(fileDescription, buf, letters);
 	if (readDescription == -1)
 	{
+		close(fileDescription);
 		return (0);
 	}
 	/* write file in stdout*/
 	writeDescription = write(1, buf, letters);
 	if (writeDescription == -1)
 	{
+		close(fileDescription);
 		return (0);
 	}
-
 	/*close file*/
 	close(fileDescription);
 	free(buf);
-
 	return (readDescription);
 }
