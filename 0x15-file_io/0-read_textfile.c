@@ -39,6 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	/* write file in stdout*/
 	writeDescription = write(1, buf, letters);
+	free (buf);
 	if (writeDescription == -1)
 	{
 		close(fileDescription);
@@ -46,5 +47,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	/*close file*/
 	close(fileDescription);
+	free(buf);
 	return (readDescription);
 }
