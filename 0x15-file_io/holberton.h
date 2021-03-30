@@ -1,6 +1,17 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
+/*synopsys of open*/
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+/*sypnosis of close*/
+#include <unistd.h>
+
 /*function that reads a text file and prints it to the POSIX standard output.*/
 ssize_t read_textfile(const char *filename, size_t letters);
 
