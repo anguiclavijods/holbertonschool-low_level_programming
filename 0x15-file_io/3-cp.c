@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include "holberton.h"
-#define BUFFER_SIZE 1024
 /**
  * main - name of function that copies that content to other
  * @argc: cant of arguments
