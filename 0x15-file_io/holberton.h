@@ -14,6 +14,9 @@
 
 #define BUFFER_SIZE 1024
 
+/*stdout char*/
+int _putchar (char c);
+
 /*function that reads a text file and prints it to the POSIX standard output.*/
 ssize_t read_textfile(const char *filename, size_t letters);
 
