@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <fcntl.h>
 #include "holberton.h"
 /**
  * main - name of function that copies that content to other
