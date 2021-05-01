@@ -4,7 +4,7 @@
 /**
  * print_dlistint - Function that print all nodes of list
  * @h: represent the head
- * Return: None.
+ * Return: Number of nodes.
  **/
 size_t print_dlistint(const dlistint_t *h)/*h=head, n=data*/
 {
