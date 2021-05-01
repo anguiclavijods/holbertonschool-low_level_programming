@@ -1,27 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+/**
+ * print_dlistint - Function that print all nodes of list
+ * @h: represent the head
+ * Return: None.
+ **/
 size_t print_dlistint(const dlistint_t *h)/*h=head, n=data*/
 {
 /*verify if h exist*/
 	if (h == NULL)
 	{
-		return (NULL);
+		return ('\0');
 	}
+
+/*return size of linked list*/
+	int res = 0;
+
 	while (h != NULL)
 	{
-        /*store the old value of head pointer*/
-        struct dlistint_t *tmp = head;
-
-        /*change head pointer to point to next node*/
+		printf("%d\n", h->n);/*travels and print list*/
+		res++;
 		h = h->next;
-
-		printf("%d\n", h->n);
-
-        /*delete memory allocated for the previous head node*/
-        free(tmp);
 	}
-
-    return(int(h));
+	return (res);
 }
-
