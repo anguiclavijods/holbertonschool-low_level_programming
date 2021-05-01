@@ -10,10 +10,18 @@ size_t print_dlistint(const dlistint_t *h)/*h=head, n=data*/
 	}
 	while (h != NULL)
 	{
-		h->n = h->n;
+        /*store the old value of head pointer*/
+        struct dlistint_t *tmp = head;
+
+        /*change head pointer to point to next node*/
 		h = h->next;
+
 		printf("%d\n", h->n);
+
+        /*delete memory allocated for the previous head node*/
+        free(tmp);
 	}
-/*pin node head*/
+
+    return(int(h));
 }
 
