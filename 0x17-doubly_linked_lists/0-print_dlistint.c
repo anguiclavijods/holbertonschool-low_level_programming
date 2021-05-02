@@ -8,20 +8,19 @@
  **/
 size_t print_dlistint(const dlistint_t *h)/*h=head, n=data*/
 {
-/*verify if h exist*/
+	int res = 0;
+
+    /*verify if h exist*/
 	if (h == NULL)
 	{
 		return ('\0');
 	}
-
-/*return size of linked list*/
-	int res = 0;
-
+    /*return size of linked list*/
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);/*travels and print list*/
 		h = h->next;
-        res++;
+		res++;
 	}
 	return (res);
 }
