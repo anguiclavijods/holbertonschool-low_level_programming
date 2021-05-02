@@ -11,16 +11,17 @@ size_t print_dlistint(const dlistint_t *h)/*h=head, n=data*/
 /*verify if h exist*/
 	if (h == NULL)
 	{
-		return ('0');
+		return ('\0');
 	}
 
 /*return size of linked list*/
+	int res = 0;
+
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);/*travels and print list*/
-		res++;
 		h = h->next;
-		int res = 0;
+        res++;
 	}
 	return (res);
 }
