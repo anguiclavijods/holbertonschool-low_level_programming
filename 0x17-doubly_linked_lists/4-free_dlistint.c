@@ -11,12 +11,7 @@ void free_dlistint(dlistint_t *head)
     /*0. verify if head exist*/
 	if (head == NULL)
 	{
-		return (NULL);
-	}
-    /*1. if head have exist prev*/
-	while (head->prev)
-	{
-		head = head->prev;
+		return;
 	}
     /*if head have exist next*/
 	while (head->next)
