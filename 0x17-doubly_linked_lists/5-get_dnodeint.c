@@ -10,12 +10,12 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int index_node = 0;
-    /*verify if exist head*/
+	/*verify if exist head*/
 	if (head == NULL)
 	{
 		return (NULL);
 	}
-    /*verify iterator for index*/
+	/*verify iterator for index*/
 	while (head != NULL)/*while head have node*/
 	{
 		head = head->next;/*iterate to next*/
@@ -23,7 +23,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		{
 			return (head);
 		}
-        index_node++;
+		index_node++;
 	}
 	return (NULL);/*if the index no exist in index node*/
 }
