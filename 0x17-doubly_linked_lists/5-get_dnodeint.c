@@ -18,11 +18,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/*verify iterator for index*/
 	while (head != NULL)/*while head have node*/
 	{
-		head = head->next;/*iterate to next*/
 		if (index == index_node)
 		{
 			return (head);
 		}
+		head = head->next;/*iterate to next*/
 		index_node++;
 	}
 	return (NULL);/*if the index no exist in index node*/
