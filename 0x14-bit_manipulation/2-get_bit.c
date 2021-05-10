@@ -8,7 +8,8 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned log int result;
+	unsigned int result;
+
 	result = n & (unsigned long)(1 << index);
 	if (result > 0)
 	{
