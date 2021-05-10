@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * get_bit - function that verify one node
  * @n: node to verify
