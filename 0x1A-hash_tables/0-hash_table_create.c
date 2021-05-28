@@ -9,6 +9,10 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
+	if (size <= 0)
+	{
+		return(NULL);
+	}
 
 	/*create new table with struct hash_table_t, initialize in 0 for valgrind*/
 	hash_table_t *new_hash_t = NULL;
