@@ -10,14 +10,14 @@
 */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
+	/*declare the var to return*/
+	unsigned long int new_hash;
+
 	/*validate if parameter is null*/
 	if (size == 0)
 	{
 		return ('\0');
 	}
-
-	/*declare the var to return*/
-	unsigned long int new_hash;
 
 	/*called function hash_djbs2 for paremeter key*/
 	new_hash = hash_djb2(key);
