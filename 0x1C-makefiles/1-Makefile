@@ -1,0 +1,2 @@
+$(CC) main.c holberton.c -o holberton
+SRC := $(wildcard *.c)
