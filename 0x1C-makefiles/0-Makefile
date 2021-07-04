@@ -1,1 +1,2 @@
-$(CC) main.c holberton.c -o holberton
+all:
+main.c holberton.c -o holberton
