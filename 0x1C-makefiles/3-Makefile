@@ -5,16 +5,17 @@ NAME = holberton
 RM = rm
 
 all: $(OBJ)
-	    $(CC) $(SRC) -o $(NAME)
+	    $(CC) $(OBJ) -o $(NAME)
 
 clean:
-	(RM) $(SRC)
+	(RM) -f *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) $(SRC) $(OBJ)
+	(RM) -f *~ $(NAME)
+	$(RM) -F $(OBJ)
 
 re:
-	$(gcc) $(RM) -rf $(SRC) $(OBJ)
+	oclean all
